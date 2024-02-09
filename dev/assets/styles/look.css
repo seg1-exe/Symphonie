@@ -1,0 +1,87 @@
+/**** Look.css ********/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.voir-plus{
+    outline: none;
+    text-decoration: underline;
+    color: black;
+}
+
+.voir-plus:visited .voir-plus:hover{
+    color: black;
+}
+
+/** Header **/
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav-item{
+    outline: none;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 20px;
+}
+.nav-item:hover{
+    text-decoration: underline;
+}
+
+/** Page Index **/
+main{
+    margin: 50px 100px;
+    display: flex;
+}
+
+#pochettePrincipale img{
+    width: 500px;
+}
+
+figcaption{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+#slider{
+    margin-left: 400px;
+}
+
+#slider h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#slider ul{
+    overflow-y: scroll;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+#slider img{
+    width: 100px;
+}
+
+/** Liste des albums **/
+.albums_list{
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.albums_list img{
+    width: 300px;
+}
+.album_element{
+    margin: 10px 0;
+}
+.album-voir-plus{
+    position: relative;
+    left: 5rem;
+}
